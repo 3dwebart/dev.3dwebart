@@ -1,0 +1,30 @@
+text:처음에 한데로 jquery를 불러왔다면 이제는 웹 문서내에 사용하기 위해 jquery를 선언하고 사용해보자.
+선언하는 방법은 4가지 방법이 있다.-|-
+
+
+text:jQuery 선언방식 1-|-
+
+code:(function() {
+	실행될 내용
+}) (jQuery);-|-
+
+text:jQuery 선언방식 2-|-
+code:jQuery(document).ready(function() {
+	실행될 내용
+});-|-
+
+text:jQuery 선언방식 3-|-
+code:$(document).ready(function() {
+	실행될 내용
+});-|-
+
+text:jQuery 선언방식 4-|-
+code:$(function() {
+	실행될 내용
+});-|-
+
+text:위 4가지 방식 모두 정상적으로 동작한다.
+위 jQuery 안에 동작할 내용을 작성한다.
+위 내용을 설명하자면 웹 브라우저가 실행되고 브라우저 내에 html 문서가 모두 로드 된 다음에 안의 내용이 실행되는 방식이다.
+jQuery는 기본적으로 함수로 시작해서 ( $(function() { …  함수가 끝나는 부분 ( }); )에서 끝이난다.
+함수로 감싸는 이유는 한번 사용하고 버릴게 아니라 브라우저 내에서 동작하는 페이지내에 있는 jQuery 를 여러번 재활용해서 사용 할 수 있도록 하기 위해서이다.

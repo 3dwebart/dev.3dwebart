@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Head BEGIN -->
+<head>
+	<meta charset="utf-8">
+	<title>Metronic Frontend (with Top Bar)</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta content="Metronic Shop UI description" name="description">
+	<meta content="Metronic Shop UI keywords" name="keywords">
+	<meta content="keenthemes" name="author">
+
+	<meta property="og:site_name" content="-CUSTOMER VALUE-">
+	<meta property="og:title" content="-CUSTOMER VALUE-">
+	<meta property="og:description" content="-CUSTOMER VALUE-">
+	<meta property="og:type" content="website">
+	<!-- link to image for socio -->
+	<meta property="og:image" content="-CUSTOMER VALUE-">
+	<meta property="og:url" content="-CUSTOMER VALUE-">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Fonts START -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+	<!-- Fonts END -->
+
+	<!-- Global styles START -->          
+	<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Global styles END --> 
+   
+	<!-- Page level plugin styles START -->
+	<link href="assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+	<link href="assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="assets/global/plugins/slider-revolution-slider/rs-plugin/css/settings.css" rel="stylesheet">
+	<!-- Page level plugin styles END -->
+	<!-- Theme styles START -->
+	<link href="assets/global/css/components.css" rel="stylesheet">
+	<link href="assets/frontend/layout/css/style.css" rel="stylesheet">
+	<link href="assets/frontend/pages/css/style-revolution-slider.css" rel="stylesheet"><!-- metronic revo slider styles -->
+	<link href="assets/frontend/layout/css/style-responsive.css" rel="stylesheet">
+	<link href="assets/frontend/layout/css/themes/blue.css" rel="stylesheet" id="style-color">
+	<link href="assets/frontend/layout/css/custom.css" rel="stylesheet">
+	<!-- Theme styles END -->
+	<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+
+	<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/frontend/layout/scripts/jquery.film_roll.js" type="text/javascript"></script>
+	<!-- 메뉴 스크립트 Start -->
+	<script src="assets/frontend/layout/scripts/cangoto.navigation.js" type="text/javascript"></script>
+	<!-- 메뉴 스크립트 End -->
+	<!-- 로그인/회원가입 스크립트 Start -->
+	<script src="assets/frontend/layout/scripts/members.js" type="text/javascript"></script>
+	<!-- 로그인/회원가입 스크립트 End -->
+
+	<!-- Modal Tab 2 Slide Start -->
+	<link rel="stylesheet" href="assets/frontend/layout/css/pgwslideshow_light.min.css">
+	<link rel="stylesheet" href="assets/frontend/layout/css/pgwslideshow.min.css">
+	<script src="assets/frontend/layout/scripts/pgwslideshow.js" type="text/javascript"></script>
+	<!-- Modal Tab 2 Slide End -->
+	<style>
+	.pgwSlideshow ul {
+		padding: 0;
+	}
+	</style>
+	<script>
+        $(document).ready(function() {
+        	$('.view-first > img').each(function() {
+                $(this).css('width', '530px');
+                $(this).parent().css('width', $(this).width());
+                $(this).css('height', '280px');
+                $(this).parent().css('height', $(this).height());
+            });
+            
+            $('.view-first').each(function() {
+                $(this).width(function() {
+                    $(this).width($(this).find('img').width());
+                    $(this).find('.mask').width($(this).find('img').width());
+                });
+
+
+                // $(this).width($(this).width() - 20 + 'px');
+                // $(this).css('margin-left', '10px');
+                // $(this).css('margin-right', '10px');
+            });
+
+            // 하단 X 4종 최근 게시물(1 : 8개씩) / 디바이스 변경에 따른 높이값 자동 계산
+            $('.container .view-type-b').each(function() {
+                $(this).height(function() {
+                    //$(this).height($(this).find('img').height());
+                    $(this).find('.mask').height($(this).find('img').height());
+                });
+                // $(this).width($(this).width() - 20 + 'px');
+                // $(this).css('margin-left', '10px');
+                // $(this).css('margin-right', '10px');
+            });
+
+            $('.view-type-b').hover(function() {
+            	$(this).removeClass('hidden-ctype-latest-bottom');
+            	$(this).addClass('view-ctype-1-latest-bottom');
+            }, function() {
+            	$(this).removeClass('view-ctype-1-latest-bottom');
+            	$(this).addClass('hidden-ctype-latest-bottom');
+            });
+
+            $('#application_0').click(function() {
+            	alert('신청이 완료되었습니다.\n예약번호 : 12345678\n마이티켓에서 확인가능.');
+            });
+        });
+			
+    </script>
+</head>
+<!-- Head END -->
+<!-- Body BEGIN -->
+<body class="corporate">
+<!-- 메뉴 HTML Start -->
+	<!-- BEGIN HEADER -->
+	<div class="header">
+		<div class="container">
+			<a class="site-logo" href="/">
+				<img src="assets/frontend/layout/img/logos/logo-cangoto.png" alt="Metronic FrontEnd">
+			</a>
+			<a href="javascript:void(0);" class="mobi-toggler">
+				<i class="fa fa-bars"></i>
+			</a>
+			<!-- BEGIN NAVIGATION -->
+			<!-- PC 화면 -->
+			<div class="header-navigation pull-left font-transform-inherit">
+				<ul class="main-menu">
+					<li class="dropdown">
+						<a class="dropdown-toggle menu1" data-toggle="dropdown" data-target="#" href="javascript:;">
+							전시
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">일정순</a>
+							</li>
+							<li>
+								<a href="#">이번주</a>
+							</li>
+                			<li>
+                				<a href="#">인기유료</a>
+                			</li>
+                			<li>
+								<a href="#">인기무료</a>
+							</li>
+							<li>
+								<a href="#">컨퍼런스</a>
+							</li>
+							<li>
+								<a href="#">웨딩</a>
+							</li>
+							<li>
+								<a href="#">유학/연수</a>
+							</li>
+							<li>
+								<a href="#">예정전시</a>
+							</li>
+							<li>
+								<a href="#">해외전시</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle menu2" data-toggle="dropdown" data-target="#" href="javascript:;">
+							미술
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">판매중</a>
+							</li>
+							<li>
+								<a href="#">전체보기</a>
+							</li>
+							<li>
+								<a href="#">무료전시</a>
+							</li>
+							<li>
+								<a href="#">지난전시</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle menu3" data-toggle="dropdown" data-target="#" href="javascript:;">
+							공연
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">주간판매순</a>
+							</li>
+							<li>
+								<a href="#">체험</a>
+							</li>
+							<li>
+								<a href="#">콘서트</a>
+							</li>
+							<li>
+								<a href="#">대학로</a>
+							</li>
+							<li>
+								<a href="#">강남뮤지컬</a>
+							</li>
+							<li>
+								<a href="#">어린이</a>
+							</li>
+							<li>
+								<a href="#">경상지역</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle menu4" data-toggle="dropdown" data-target="#" href="javascript:;">
+							강연
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">신규오픈</a>
+							</li>
+							<li>
+								<a href="#">일정순</a>
+							</li>
+							<li>
+								<a href="#">주간판매순</a>
+							</li>
+							<li>
+								<a href="#">취미/교양</a>
+							</li>
+							<li>
+								<a href="#">교육/실무</a>
+							</li>
+							<li>
+								<a href="#">자기계발</a>
+							</li>
+							<li>
+								<a href="#">디큐브아카데미</a>
+							</li>
+							<li>
+								<a href="#">마이크임팩트</a>
+							</li>
+						</ul>
+					</li>
+					<!-- END TOP SEARCH -->
+				</ul>
+			</div>
+			<div class="header-navigation pull-right font-transform-inherit right-menu">
+				<ul>
+					<!-- 로그인 전 Start -->
+					<li>
+						<a href="login.html" class="login-button"><span>로그인</span></a>
+					</li>
+					<li>
+						<a href="join.html">회원가입</a>
+					</li>
+					<!-- 로그인 전 End -->
+					<!-- 로그인 후 Start -->
+					<!--
+					<li>
+						<a data-toggle="modal" href="#">로그아웃</a>
+					</li>
+					<li>
+						<a data-toggle="modal" href="#">회원정보수정</a>
+					</li>
+					-->
+					<!-- 로그인 후 End -->
+					<li>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+							마이페이지
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">마이티켓</a>
+							</li>
+							<li>
+								<a href="#">관심티켓</a>
+							</li>
+							<li>
+								<a href="#">1:1문의</a>
+							</li>
+							<li>
+								<a href="#">댓글보기</a>
+							</li>
+							<li>
+								<a href="#">내정보</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+							고객센터
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">1:1 문의</a>
+							</li>
+							<li>
+								<a href="#">F A Q</a>
+							</li>
+							<li>
+								<a href="#">공지사항</a>
+							</li>
+							<li>
+								<a href="#">광고문의</a>
+							</li>
+							<li>
+								<a href="#">이용안내</a>
+							</li>
+						</ul>
+					</li>
+					<!-- END TOP SEARCH -->
+				</ul>
+			</div>
+			<!-- END NAVIGATION -->
+		</div>
+	</div>
+    <!-- Header END -->
+
+    <!-- 메뉴 HTML End -->
+<link rel="stylesheet" type="text/css" href="assets/frontend/layout/css/cangoto_gallery_common.css" />
+<link rel="stylesheet" type="text/css" href="assets/frontend/layout/css/cangoto_gallery.css" />
+<link rel="stylesheet" type="text/css" href="assets/frontend/layout/css/cangoto_gallery_b.css" />
+<link href="assets/frontend/layout/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="assets/frontend/layout/scripts/main_slideer.js"></script>
+<div id='cangoto-slider' class="cangoto-slider">
+	<div class="view-first-wrap">
+	<div class="view view-first">
+		<img src="http://app.cangoto.kr/Resource/Banner/b_Chuseok2015.png" alt="" class="img-responsive" />
+		<div class="mask">
+            <div class="sliding-btn">
+            	<!--
+            		data-eveid-value : EVEID
+            		style="background-color: CTYPE"
+            		style="color: CTYPE"
+
+            		color 값 : #eec02f', '#e55557', '#f147ba', '#2cb6da - CTYPE 순서임
+
+            		0 = '전시';
+					1 = '공연/체험';
+					2 = '영화';
+					3 = '강연/강좌';
+					4 = '미술'
+
+            		href="#slide_detail_0" : Modal 의 아이디
+            	-->
+                <a data-toggle="modal" data-eveid-value="2712" href="#slide_detail_0" class="link-btn left-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img/gallery-button-left.png" alt="">
+                </a>
+                <a data-toggle="modal" data-eveid-value="2706" href="#application_0" class="link-btn right-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img//gallery-button-right.png" alt="">
+                </a>
+            </div>
+            <div class="text-box" style="border-color: #eec02f;">
+	            <div class="title">
+	            	2015 한가위 명절선물상품전
+	            </div>
+	            <div class="d-day">
+	            	D - 1 <!-- 이벤트 시작일 - 오늘날짜 -->
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="diary">
+	            	08.26 ~ 08.29(4 일간) <!-- 날짜 계산 --> | 서울 코엑스 HALL C <!-- INFO_PLACE -->
+	            </div>
+	            <div class="price" style="color: #eec02f;">
+	            	무료 (~8/25) <!-- PRICE -->
+	            </div>
+			</div>
+        </div>
+	</div>
+	</div>
+	<div class="view-first-wrap">
+	<div class="view view-first">
+		<img src="http://app.cangoto.kr/Resource/Banner/b22.jpg" alt="" class="img-responsive" />
+		<div class="mask">
+            <div class="sliding-btn">
+                <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn left-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img/gallery-button-left.png" alt="">
+                </a>
+                <a data-toggle="modal" data-eveid-value="2706" href="#application_0" class="link-btn right-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img//gallery-button-right.png" alt="">
+                </a>
+            </div>
+            <div class="text-box" style="border-color: #eec02f;">
+	            <div class="title">
+	            	세텍 메가쇼  2015 시즌 2
+	            </div>
+	            <div class="d-day">
+	            	D - 2
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="diary">
+	            	08.27 ~ 08.30(4 일간) | 서울 SETEC 전관
+	            </div>
+	            <div class="price" style="color: #eec02f;">
+	            	무료
+	            </div>
+			</div>
+        </div>
+	</div>
+	</div>
+	<div class="view-first-wrap">
+	<div class="view-first-ribbon">
+		<img src="assets/frontend/layout/img/slide-ctype-1-ribbon.png" alt="">
+	</div>
+	<div class="view view-first">
+		<img src="http://app.cangoto.kr/Resource/Banner/1(3).png" alt="" class="img-responsive" />
+		<div class="mask">
+            <div class="sliding-btn">
+                <a data-toggle="modal" data-eveid-value="2514" href="#slide_detail_0" class="link-btn left-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img/gallery-button-left.png" alt="">
+                </a>
+                <a data-toggle="modal" data-eveid-value="2706" href="#application_0" class="link-btn right-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img//gallery-button-right.png" alt="">
+                </a>
+            </div>
+            <div class="text-box">
+	            <div class="title">
+	            	2015 오토모티브위크 (Automotive Week 2015)
+	            </div>
+	            <div class="d-day">
+	            	D - 10
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="diary">
+	            	09.04 ~ 09.06(3 일간) | 고양 킨텍스 제1전시장 3,4,5 홀
+	            </div>
+	            <div class="price" style="color: #eec02f;">
+	            	50%할인권
+	            </div>
+			</div>
+        </div>
+	</div>
+	</div>
+	<div class="view-first-wrap">
+	<div class="view view-first">
+		<img src="http://app.cangoto.kr/Resource/Banner/b_DIOCIAN.png" alt="" class="img-responsive" />
+		<div class="mask">
+            <div class="sliding-btn">
+                <a data-toggle="modal" data-eveid-value="2708" href="#slide_detail_0" class="link-btn left-btn" style="background-color: #e55557;">
+                    <img src="assets/frontend/layout/img/gallery-button-left.png" alt="">
+                </a>
+                <a data-toggle="modal" data-eveid-value="2706" href="#application_0" class="link-btn right-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img//gallery-button-right.png" alt="">
+                </a>
+            </div>
+            <div class="text-box" style="border-color: #e55557;">
+	            <div class="title">
+	            	제6회 위대할 애송이
+	            </div>
+	            <div class="d-day">
+	            	D - 3
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="diary">
+	            	08.28 ~ 08.28(1 일간) | 강남구 역삼동  미림타워 별관 아이디어팩토리
+	            </div>
+	            <div class="price" style="color: #e55557;">
+	            	10,000원
+	            </div>
+			</div>
+        </div>
+	</div>
+	</div>
+	<div class="view-first-wrap">
+	<div class="view view-first">
+		<img src="http://app.cangoto.kr/Resource/Ticket/t_Kydo2015.png" alt="" class="img-responsive" />
+		<div class="mask">
+            <div class="sliding-btn">
+                <a data-toggle="modal" data-eveid-value="2706" href="#slide_detail_0" class="link-btn left-btn" style="background-color: #e55557;">
+                    <img src="assets/frontend/layout/img/gallery-button-left.png" alt="">
+                </a>
+                <a data-toggle="modal" data-eveid-value="2706" href="#application_0" class="link-btn right-btn" style="background-color: #eec02f;">
+                    <img src="assets/frontend/layout/img//gallery-button-right.png" alt="">
+                </a>
+            </div>
+            <div class="text-box" style="border-color: #e55557;">
+	            <div class="title">
+	            	금난새와 함께하는 농어촌희망청소년 오케스트라
+	            </div>
+	            <div class="d-day">
+	            	D - -12
+	            </div>
+	            <div class="clearfix"></div>
+	            <div class="diary">
+	            	08.13 ~ 08.13(1 일간) | 서울 예술의 전당 콘서트홀
+	            </div>
+	            <div class="price" style="color: #e55557;">
+	            	종료
+	            </div>
+			</div>
+        </div>
+	</div>
+	</div>
+</div>
+
+<hr class="dark-grey-line" />
+<!-- .modal -->
+<div id="slide_detail_0" class="modal fade latest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="background: transparent;">
+	<!-- .modal-dialog -->
+	<div class="modal-dialog">
+		<!-- .modal-content -->
+		<div class="modal-content">
+			<!-- 제목 -->
+			<div class="modal-header">
+				<div class="col-md-12 modal-top-ribbon" style="padding:0;">
+					<img src="assets/frontend/layout/img/ctype-1-ribbon.png" alt="전시 리본" class="img-responsive" />
+				</div>
+			</div>
+			<!-- 내용 -->
+			<div class="modal-body left-padding-clear right-padding-clear">
+				<h1 class="detail_id"></h1>
+				
+				<div class="col-md-4">
+					<img src="http://app.cangoto.kr/Resource/Poster/p2_Chuseok2015.png" class="slide-poster img-responsive" />
+				</div>
+				<div class="col-md-8">
+					<h1 id="myModalLabel">2015 한가위 명절선물상품전</h1>
+					<div class="clearfix"></div>
+					<hr />
+					<div class="col-xs-9">
+						<div class="col-md-3 bold">일정</div>
+						<div class="col-md-9">
+							<div>08.26(수) ~ 08.29(토)</div>
+							<div>오전 10 시 ~ 오후 5시</div>
+						</div>
+						<div class="col-md-3 bold">장소</div>
+						<div class="col-md-9 info-place">서울 코엑스 HALL C</div>
+						<div class="clearfix"></div>
+						<div class="col-md-3 bold">연락처</div>
+						<div class="col-md-9">02-515-4855</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-xs-3">D - 4</div>
+					<div class="clearfix"></div>
+					<hr />
+					<div class="col-xs-9">
+						<div class="col-md-3 bold">입장료</div>
+						<div class="col-md-9 original-price">5,000</div>
+					</div>
+					<div class="col-xs-3">
+						<span class="price_info" style="background-color: #e55557">무료 (~8/25)</span>
+					</div>
+					<hr />
+					<div class="col-xs-12">
+						<a href="#">#인테리어</a>
+						&middot;
+						<a href="#">#무료</a>
+						&middot;
+						<a href="#">#할인</a>
+						&middot;
+						<a href="#">#벡스코</a>
+						&middot;
+						<a href="#">#건축</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- 탭 메뉴 시작 -->
+				<ul class="nav nav-tabs">
+					<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 left-padding-clear right-padding-clear text-center active"><a href="#detail" data-toggle="tab">전시 상세정보</a></li>
+					<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 left-padding-clear right-padding-clear text-center"><a href="#gallery" data-toggle="tab">전시 설명/갤러리</a></li>
+					<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 left-padding-clear right-padding-clear text-center"><a href="#comment" data-toggle="tab">신청/덧글</a></li>
+				</ul>
+				<!--// 탭 메뉴 끝 -->
+				<!-- 탭 화면 시작 -->
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="detail">
+						<!-- 상세정보 > 상세내용 Start -->
+						<div class="detail-content">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+								행사명
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 main-detail-left-border">
+								2015 대항민국 하면 박락회
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">
+								&nbsp;
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+								일정
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 main-detail-left-border">
+								09.03(목) ~ 09.06(일) / 4일간
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">
+								<img src="/assets/frontend/layout/img/icon-calender.png" alt="calender" />
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+								장소
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 main-detail-left-border">
+								부산백스코 1전시장
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">
+								<img src="/assets/frontend/layout/img/icon-
+								.png" alt="map" />
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+								연락처
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 main-detail-left-border">
+								1577-6695
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">
+								<img src="/assets/frontend/layout/img/icon-tel.png" alt="tel" />
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+								입장료
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 main-detail-left-border">
+								* 캔고루 사전등록 -> 무료(09/01)<br />
+								* 캔고루 특별할인(09/02 ~ 09/06) / 정상가 5.000 -> 4.000원<br />
+								* 관람시간 : 오전 10시 ~ 오후 6시 (입장마감 : 오후 5시 30분)<br />
+								* 취소 환불 규정을 꼭 확인해 주세요.<br />
+								- 전시 마지막 날인 09월 06일(일)까지 환불 가능<br />
+								- 09월 06일 이후 환불 불가<br />
+								* 취소문의<br />
+								- 전화 : 02 - 868 - 4184 (평일 오전 9시 ~ 오후 6시)<br />
+								- 카톡 : 캔고루(상시 문의)<br />
+								- 캔고루 앱 : Q&amp;A문의 게시판(상시 문의)
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">
+								&nbsp;
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+								URL
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 main-detail-left-border">
+								http://www.cangoto.kr/KH28
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">
+								<a href="#">Copy</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+<style type="text/css">
+.recommend-carousel .carousel-inner .active.left { left: -25%; }
+.recommend-carousel .carousel-inner .next        { left:  25%; }
+.recommend-carousel .carousel-inner .prev        { left: -25%; }
+.recommend-carousel .carousel-control.left, .carousel-control.right {background-image:none;}
+.recommend-carousel .item:not(.prev) {visibility: visible;}
+.recommend-carousel .item.right:not(.prev) {visibility: hidden;}
+.recommend-carousel .rightest{ visibility: visible;}
+</style>
+						<!-- 상세정보 > 상세내용 End -->
+						<div class="detail-recommend">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="recommend-title" style="border-bottom-color: #eec02f; color: #eec02f">추천전시, 이런전시는 어떤가요?</div>
+								<div class="recommend-carousel">
+									<div class="carousel slide" id="recommend_carousel_content">
+										<ol class="carousel-indicators">
+											<li data-target="#recommend_carousel_content" data-slide-to="0" class="active"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="1"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="2"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="3"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="4"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="5"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="6"></li>
+											<li data-target="#recommend_carousel_content" data-slide-to="7"></li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="item active">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p2_afarmshow2015.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p2_DASS2015.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p_IMAC2015.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p2_Chuseok2015.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p_supermomfair.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p_mbc.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p_DAEGUcoffee2015.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-lg-3 col-xs-3 col-md-3 col-sm-3">
+													<a href="#">
+														<img src="http://app.cangoto.kr/Resource/Poster/p_SFCS2015.png" class="img-responsive">
+													</a>
+												</div>
+											</div>
+										</div>
+										<a class="left carousel-control" href="#recommend_carousel_content" data-slide="prev">
+											<i class="glyphicon glyphicon-chevron-left"></i>
+										</a>
+										<a class="right carousel-control" href="#recommend_carousel_content" data-slide="next">
+											<i class="glyphicon glyphicon-chevron-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="detail-recommend-connection">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="recommend-connection-title" style="border-bottom-color: #eec02f; color: #eec02f">
+									관련콘텐츠
+								</div>
+							</div>
+
+							<ul>
+								<li>
+									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+										이미지
+									</div>
+									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
+										<h4 class="bold">감정보드게임을 통한 긍정소통하기-스트렝스가든</h4>
+										<span class="sns">블로그</span>
+										<span class="reg-date">2015-06-25</span>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								<li>
+									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+										이미지
+									</div>
+									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
+										<h4 class="bold">감정보드게임을 통한 긍정소통하기-스트렝스가든</h4>
+										<span class="sns">블로그</span>
+										<span class="reg-date">2015-06-25</span>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								<li>
+									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+										이미지
+									</div>
+									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
+										<h4 class="bold">감정보드게임을 통한 긍정소통하기-스트렝스가든</h4>
+										<span class="sns">블로그</span>
+										<span class="reg-date">2015-06-25</span>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+							</ul>
+							<a href="#">
+								<span class="more text-center">더 보기</span>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="tab-pane fade" id="gallery">
+						<div class="detail-info">
+							<div class="col-xs-12">
+								<h3 class="title">전시정보</h3>
+							</div>
+							<div class="clearfix"></div>
+							<hr />
+							<div class="col-xs-12">
+								25년 역사의 하반기 최대 건축&amp;인테리어 전문전시회 ‘부산경향하우징페어’ 국내외 우수 건자재기업 300개사(700부스)가 참가하고 매년 약 7만 명이 방문하는 명실상부한 최고의 건축 비즈니스의 장! 올해는 프리미엄 홈스타일링 전시회 ‘부산리빙앤라이프스타일’과의 동시개최로 다양한 홈데코 용품, 인테리어 제품도 함께 만날 수 있습니다.
+							</div>
+							<div class="col-xs-12">
+								<div class="detail-info-carasel">
+										<ul class="pgwSlideshow">
+	    <li>
+	    	<img src="img/san-francisco.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge">
+	    </li>
+	    <li>
+	    	<img src="img/rio.jpg" alt="Rio de Janeiro, Brazil">
+	    </li>
+	    <li>
+	    	<img src="img/london_mini.jpg" alt="" data-large-src="img/london.jpg">
+	    </li>
+	    <li>
+	    	<img src="img/new-york.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/new-delhi.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/paris.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/sydney.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/tokyo.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/honk-kong.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/dakar.jpg" alt="">
+	    </li>
+	    <li>
+	    	<img src="img/toronto.jpg" alt="">
+	    </li>
+	    <li>
+	        <a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
+	            <img src="img/monaco.jpg" alt="Monaco">
+	        </a>
+	    </li>
+	</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="comment">
+						<div class="detail-comment">
+							<div class="col-xs-12">
+								신청자 <small>(2,105 명)</small> 댓글 <small>(215 명)</small>
+								<button class="pull-right">신청자 엑셀다운</button>
+							</div>
+							<div class="clearfix"></div>
+							<hr />
+							<div class="detail-comment-top">
+								<div class="col-md-6">
+									<div class="col-xs-4">
+										<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+									</div>
+									<div class="col-xs-8">
+										<div class="name-email-tel">최인욱 / 캔고루㈜ / 대표</div>
+										<div class="name-email-tel">mkt@cangoto.kr  /  02-111-1111</div>
+										<div class="name-email-tel">010-9999-9999</div>
+
+										<span class="explanation">
+											라면 100박스 살껍니다. 직원들에게 선물할 라면을 고르고 있습니다. 관계자여러분께서는 ... 
+										</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="col-xs-4">
+										<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+									</div>
+									<div class="col-xs-8">
+										<div class="name-email-tel">최인욱 / 캔고루㈜ / 대표</div>
+										<div class="name-email-tel">mkt@cangoto.kr  /  02-111-1111</div>
+										<div class="name-email-tel">010-9999-9999</div>
+
+										<span class="explanation">
+											라면 100박스 살껍니다. 직원들에게 선물할 라면을 고르고 있습니다. 관계자여러분께서는 ... 
+										</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="col-xs-4">
+										<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+									</div>
+									<div class="col-xs-8">
+										<div class="name-email-tel">최인욱 / 캔고루㈜ / 대표</div>
+										<div class="name-email-tel">mkt@cangoto.kr  /  02-111-1111</div>
+										<div class="name-email-tel">010-9999-9999</div>
+
+										<span class="explanation">
+											라면 100박스 살껍니다. 직원들에게 선물할 라면을 고르고 있습니다. 관계자여러분께서는 ... 
+										</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="col-xs-4">
+										<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+									</div>
+									<div class="col-xs-8">
+										<div class="name-email-tel">최인욱 / 캔고루㈜ / 대표</div>
+										<div class="name-email-tel">mkt@cangoto.kr  /  02-111-1111</div>
+										<div class="name-email-tel">010-9999-9999</div>
+
+										<span class="explanation">
+											라면 100박스 살껍니다. 직원들에게 선물할 라면을 고르고 있습니다. 관계자여러분께서는 ... 
+										</span>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="detail-comment-bottom">
+									<div class="col-md-12">
+										<div class="col-xs-1">
+											<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+										</div>
+										<div class="col-xs-11">
+											<div class="name-email-tel">
+												<span>이** / ********㈜ / 대표 / 2********@naver.com / 02-***-**** / 0**-9***-9****</span>
+												<span class="pull-right comment-mudify-btn">
+													<a href="#"><i class="fa fa-edit"></i></a>
+													<a href="#"><i class="fa fa-minus"></i></a>
+												</span>
+											</div>
+											<span class="comment">
+												아,, 라면을 엄청 좋아하는데, 꼭 참석할꺼에요~!  하하하 
+											</span>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-xs-1">
+											<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+										</div>
+										<div class="col-xs-11">
+											<div class="name-email-tel">
+												<span>이** / ********㈜ / 대표 / 2********@naver.com / 02-***-**** / 0**-9***-9****</span>
+												<span class="pull-right comment-mudify-btn">
+													<a href="#"><i class="fa fa-edit"></i></a>
+													<a href="#"><i class="fa fa-minus"></i></a>
+												</span>
+											</div>
+
+											<span class="comment">
+												아,, 라면을 엄청 좋아하는데, 꼭 참석할꺼에요~!  하하하 
+											</span>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-xs-1">
+											<img src="img/user_pic_sample.jpg" alt="" class="img-responsive img-circle">
+										</div>
+										<div class="col-xs-11">
+											<div class="name-email-tel">
+												<span>이** / ********㈜ / 대표 / 2********@naver.com / 02-***-**** / 0**-9***-9****</span>
+												<span class="pull-right comment-mudify-btn">
+													<a href="#"><i class="fa fa-edit"></i></a>
+													<a href="#"><i class="fa fa-minus"></i></a>
+												</span>
+											</div>
+											<span class="comment">
+												아,, 라면을 엄청 좋아하는데, 꼭 참석할꺼에요~!  하하하 
+											</span>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-xs-9">
+											<textarea name="comment" id="" class="form-control"></textarea>
+										</div>
+										<div class="col-xs-3">
+											<button class="btn btn-primary">덧글 입력</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// 탭 화면 끝 -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- .modal -->
+<div id="application_0" class="modal fade latest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<!-- .modal-dialog -->
+	<div class="modal-dialog">
+		<!-- .modal-content -->
+		<div class="modal-content">
+			<!-- 제목 -->
+			
+			<!-- 내용 -->
+			<div class="modal-body left-padding-clear right-padding-clear">
+				<div class="modal-top-ribbon">
+					<img src="assets/frontend/layout/img/modal-ctype-1-ribbon.png" alt="전시 리본" />
+				</div>
+				<h1 class="detail_id"></h1>
+				
+				<div class="col-md-4">
+					<img src="http://app.cangoto.kr/Resource/Poster/p2_Chuseok2015.png" class="slide-poster img-responsive" />
+				</div>
+				<div class="col-md-8">
+					<h1 id="myModalLabel">2015 한가위 명절선물상품전</h1>
+					<div class="clearfix"></div>
+					<hr />
+					<div class="col-xs-9">
+						<div class="col-md-3 bold">일정</div>
+						<div class="col-md-9">
+							<div>08.26(수) ~ 08.29(토)</div>
+							<div>오전 10 시 ~ 오후 5시</div>
+						</div>
+						<div class="col-md-3 bold">장소</div>
+						<div class="col-md-9 info-place">서울 코엑스 HALL C</div>
+						<div class="clearfix"></div>
+						<div class="col-md-3 bold">연락처</div>
+						<div class="col-md-9">02-515-4855</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-xs-3">D - 4</div>
+					<div class="clearfix"></div>
+					<hr />
+					<div class="col-xs-9">
+						<div class="col-md-3 bold">입장료</div>
+						<div class="col-md-9 original-price">5,000</div>
+					</div>
+					<div class="col-xs-3">
+						<span class="price_info" style="background-color: #e55557">무료 (~8/25)</span>
+					</div>
+					<hr />
+					<div class="col-xs-12">
+						<a href="#">#인테리어</a>
+						&middot;
+						<a href="#">#무료</a>
+						&middot;
+						<a href="#">#할인</a>
+						&middot;
+						<a href="#">#벡스코</a>
+						&middot;
+						<a href="#">#건축</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- 탭 메뉴 시작 -->
+				<div class="text-center application-modal-title" style="color: #eec02f; border-bottom-color: #eec02f;">신청하기</div>
+				<div class="clearfix"></div>
+				<div class="col-md-2">이름(실명)</div>
+				<div class="col-md-10">홍길동</div>	
+
+				<!--// 탭 화면 끝 -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+
+<!-- /.modal -->
+<div class="container main-latest">
+	<div class="col-xs-3 pull-right all-search">
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" name="all_search" placeholder="검색하기" class="form-control" />
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-default">
+						<i class="fa fa-search"></i>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="title-n-sort" style="border-top-color: #EEBF2E;">
+		<div class="col-xs-6 title">
+			전시
+		</div>
+		<div class="col-xs-6 text-right">
+			<a href="#">일정순</a>
+			|
+			<a href="#">조회순</a>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 left-padding-clear right-padding-clear">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p2_afarmshow2015.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+            <div>
+	            <div class="col-xs-12">
+	            	<div class="title text-left">캐릭터 라이센싱페어</div>
+					<div class="text-left">07.22 ~ 07.24(3일간)</div>
+					<div>
+						<span class="pull-left text-left">서울 SETEC</span>
+						<span class="pull-right text-right" style="color: #EEC02F">무료</span>
+					</div>
+					<div class="clearfix"></div>
+					<hr class="count-view-division-line" />
+					<div class="clearfix"></div>
+					<div class="count-view">
+						<span class="pull-left text-left">2,450 views</span>
+						<span class="pull-right text-right" style="color: #EEC02F">190 applies</span>
+					</div>
+					<div class="clearfix"></div>
+	            </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 left-padding-clear right-padding-clear">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p2_DASS2015.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p_IMAC2015.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="산청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p2_Chuseok2015.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상셉ㅂ기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div><!-- <<< JQuery Append -->
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p_supermomfair.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> 
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p_mbc.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p_DAEGUcoffee2015.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="view view-type-b">
+            <img src="http://app.cangoto.kr/Resource/Poster/p_SFCS2015.png" class="img-responsive" />
+            <div class="mask">
+                <div class="sliding-btn-type-b">
+                    <a data-toggle="modal" data-eveid-value="2502" href="#slide_detail_0" class="link-btn top-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img/gallery-button-left.png" alt="상세보기" class="img-responsive" />
+                    </a>
+                    <a href="#" class="link-btn bottom-btn" style="background-color: #eec02f;">
+                        <img src="assets/frontend/layout/img//gallery-button-right.png" alt="신청하기" class="img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!-- BEGIN PRE-FOOTER -->
+	<div class="pre-footer">
+		<div class="container">
+			<ul class="footer-navi">
+				<li>
+					<a href="company/">회사소개</a>
+				</li>
+				<LI>
+					<a href="#">광고문의</a>
+				</li>
+				<LI>
+					<a href="#">이용약관</a>
+				</li>
+				<LI>
+					<a href="#">개인정보취급방침</a>
+				</li>
+			</ul>
+			<div class="col-md-9">
+				<h1 class="footer-logo">
+					<img src="assets/frontend/layout/img/logos/logo-cangoto.png" alt="캔고루 로고" />
+				</h1>
+				<div class="copyright">
+					상호명 : (주)캔고루 | 대표이사 : 최인욱 | tel : 02-501-4184 | email : mkt@cango.to | 사업자번호 : 119-86-78989 <br />
+					서울특별시 금천구 벚꽃로 254 203호(가산동,월드메르디앙벤처센타) | 통신판매업신고번호 : 2014-서울금천-0181<br /><br />
+
+					Copyright &copy; 2015 CANGOTO Inc. All rights reserved.
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="store_link">
+					<a href="https://itunes.apple.com/kr/app/mulyo-hal-intikes-kaengolu/id649328104?mt=8">
+						<img alt="" src="assets/frontend/layout/img/footer_apple_link_btn.png">
+					</a>
+				</div>
+				<div class="store_link">
+					<a href="https://play.google.com/store/apps/details?id=zeta.FairHiPass">
+						<img alt="" src="assets/frontend/layout/img/footer_andriod_link_btn.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+    <script src="assets/global/plugins/respond.min.js"></script>
+    <![endif]--> 
+    <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+          
+    <script src="assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <script src="assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+
+    <!-- BEGIN RevolutionSlider -->  
+    <script src="assets/global/plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script> 
+    <script src="assets/global/plugins/slider-revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script> 
+    <script src="assets/frontend/pages/scripts/revo-slider-init.js" type="text/javascript"></script>
+    <!-- END RevolutionSlider -->
+
+    <script src="assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            Layout.init();    
+            Layout.initOWL();
+            RevosliderInit.initRevoSlider();
+            Layout.initTwitter();
+            //Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+            //Layout.initNavScrolling();
+
+            $('.pgwSlideshow').pgwSlideshow();
+			$('.pgwSlideshow .ps-list .ps-prev').show();
+			$('.pgwSlideshow .ps-list .ps-next').show();
+        });
+
+		console.log($(document).width()/100);
+		var countTo = $(document).width()/100;
+		if (countTo > 10) {
+			countTo = 3;
+		} else {
+			countTo = 3;
+		}
+		$('.recommend-carousel .carousel .item').each(function() {
+			for (var i = 0; i < countTo; i++) {
+				next = $(this).next();
+				next.appendTo($(this));
+			}
+		});
+
+    </script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

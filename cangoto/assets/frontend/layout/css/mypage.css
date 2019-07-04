@@ -1,0 +1,71 @@
+/* here you can put your own css to customize and override the theme */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.my-page section article {
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 1px solid #CCCCCC;
+	background-color: #fff;
+}
+
+.my-page section article.profile {
+	padding: 15px;
+	background-color: #333;
+	color: #FFF;
+}
+
+.my-page section article > a {
+	display: block;
+	padding: 15px;
+	font-size: 1.3em;
+	color: #A1A1A1;
+	text-decoration: none;
+}
+
+.my-page section article > a:first-child {
+	border-radius: 10px 10px 0 0 !important;
+}
+
+.my-page section article > a:last-child {
+	border-radius: 0 0 10px 10px !important;
+	border-bottom: 0;
+}
+
+.my-page section article a:hover {
+	background-color: #DEDEDE;
+	color: #4DBAEF;
+}
+
+.my-page section article hr.menu-line {
+	border-color: #DBDBDB;
+	margin: 0 15px;
+	padding: 0;
+}
+.my-page section article .title {
+	margin-top: 10px;
+   font-size: 1.3em;
+   color: #000;
+}
+
+.my-page section article .tickets-line {
+	border: 1px solid #DEDEDE;
+	  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	padding: 10px;
+	border-radius: 10px !important;
+}
+
+.my-page section article.mypage-content {
+	padding: 15px;
+}
+
+.mypage-content h2 {
+	margin-top: 10px;
+}
+
+.my-page section article.mypage-content hr.title-content-line {
+	border-width: 2px;
+	border-color: #CCCCCC;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

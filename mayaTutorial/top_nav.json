@@ -1,0 +1,17 @@
+{
+	"BsseNav" :
+	{
+		"File" : "File",
+		"Edit" : "Edit",
+		"Modify" : "Modify",
+		"Create" : "Create",
+		"Display" : "Display",
+		"Window" : "Window",
+		"Assets" : "Assets"
+	},
+	"Animation" :
+	{
+		"Animate" : "Animate",
+		"GeometryCache" : "Geometry Cache"
+	}
+}

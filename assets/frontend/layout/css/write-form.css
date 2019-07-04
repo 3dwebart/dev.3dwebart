@@ -1,0 +1,15 @@
+/* here you can put your own css to customize and override the theme */
+.movie-explanation {
+	padding: 15px 20px;
+	border: 1px solid #dedede;
+	display: none;
+}
+
+.image-explanation {
+	padding: 15px 20px;
+	border: 1px solid #ff0000;
+}
+
+.movie-area {
+	display: none;
+}

@@ -1,0 +1,48 @@
+text:jQuery 를 사용하기 앞서 작업을 위한 폴더를 만들어보자
+폴더 이름은 jquery-study 라는 폴더를 만들었다.
+이제 이 안에 html 문서를 생성하자
+index.html 이라는 문서를 생성하고 그 안으로 들어가서 코딩을 시작해 본다.
+에디터를 열고 index.html 파일을 열어보자.
+
+*** 참고 
+기본 코딩에 대한 팁(?)
+모든 언어는 HTML 포함 여는 곳이 있으면 닫는 곳 있다.
+물론 HTML은 그렇지 않은 태그문(예를 들면 img, br)이 존재하지만 기본적으로는 그렇다.
+항상 바깥쪽을 열고 닫기를 먼저 하고 안으로 들어와 열고 닫기를 잘 해줘야 나중에 햇갈리거나 괄호가 꼬이는것을 방지할 수 있다.
+
+jQuery 를 사용하기 위해서는 기본적으로 jQuery js 문서를 로드하여야 한다.
+jQuery 문서를 로드하는 방법은 script 태그로 외부 jQuery js 문서를 로드해야 한다.
+1. 외부 사이트에서 직접 불러오는 방법-|-
+code:&lt;script type=“text/javascript” src=“http://code.jquery.com/jquery.min.js”&gt;&lt;/script&gt;-|-
+text:2. 내 사이트 내에 js문서를 저장하여 불러오는 방법-|-
+code:&lt;script type=“text/javascript” src=“만든 폴더/jquery.min.js”&gt;&lt;/script&gt;-|-
+text:먼저 jQuery 문서를 다운로드 한다.
+jQuery 문서를 다운로드 하는 곳-|-
+linkUrl:https://jquery.com/download/-|-
+text:이 사이트에서 보면 
+Download the compressed, production jQuery 1.11.3
+Download the uncompressed, development jQuery 1.11.3
+위 두가지중에 하나로 사용한다.(버전은 업그레이드 되었을 시 바뀔 수도 있다.)-|-
+
+text:Download the compressed, production jQuery 1.11.3 : 이 js 파일은 내용이 압축된 파일이다.
+일반적인 프론트 엔드 개발자 및 퍼블리셔가 많이 사용하는 파일.
+Download the uncompressed, development jQuery 1.11.3 : 이 js 파일은 개발자가 변경 가능하도록 압축되지 않은 파일이다.
+기본적으로 두가지 파일 모두 내용은 동일하다.
+jQuery 파일 또는 jQuery 플러그인 파일은 개발자 버전인지 아니면 압축 파일인지를 알기 쉽도록 파일 이름에 규칙이 있다.
+jQuery js -|-
+
+text:파일의 예)
+jquery.min.js 파일 : 압축된 파일
+jquery.js 파일 : 압축되지 않은 개발자 버전의 파일-|-
+
+text:jQuery 를 개발할 것이 아니므로 Download the compressed, production jQuery 1.11.3 을 다운로드 해보자
+&lt;a href="https://jquery.com/download/" target="_blank"&gt;https://jquery.com/download/&lt;/a&gt; 에서 Download the compressed, production jQuery 1.11.3 이라는 곳을 클릭하면 query-1.11.3.min.js 파일을 다운로드 할 수 있다
+브라우저에 따라 다운 로드 하려는 문서가 다운로드가 되지 않고 웹 페이지처럼 뜨는 경우가 있는데 당황하지 말고 저장 (윈도우 : Ctrl + s, 맥 : Command + s)하면 된다-|-
+
+text:이제 다운 받은 jquery 문서를 앞으로  jquery-study 폴더안에 js 라는 폴더를 생성하고 그 안에 다운받은 jquery js 문서를 넣고 로드 해보자
+방식은 외부 사이트에서 직접 로드하는 방식과 동일하다.-|-
+code:&lt;script type=“text/javascript” src=“js/jquery-1.11.3.min.js”&gt;&lt;/script&gt;-|-
+text:앞서 하는 로드 방식과 다른점이 있을까?-|-
+
+text:있다.
+첫번째 방법으로 로드하는 경우 간혹 가다가 웹 속도가 느린곳에서는 외부 로드가 잘 이루어 지지 않아 사이트가 초반에 단 몇초간이라도 정상작동이 되지 않는 경우가 발생할 수 있다.

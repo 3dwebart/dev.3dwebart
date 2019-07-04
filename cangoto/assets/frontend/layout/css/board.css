@@ -1,0 +1,38 @@
+.qna-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.qna-list li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+.qna-view {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.qna-view li.question, .qna-view li.answer {
+	margin-top: 20px;
+}
+
+.qna-view li div span span.answer-check {
+	padding-left: 20px;
+}
+
+.small-text {
+	font-size: 0.5em;
+	color: #BABABA;
+}
+
+.btn-question, .btn-question:hover, .btn-question:active {
+	background-color: #4DBAEF;
+	border: 0;
+	padding: 10px 15px;
+	border-radius: 10px !important;
+	color: white;
+}

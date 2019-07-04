@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TEST</title>
+	<script src="http://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+	<div class="file-test">
+		<input type="file" name="files[]" class="files" />
+	</div>
+	<div class="test-input">
+		<div>
+			<input type="text" name="test-date" class="test-date">
+			<input type="text" name="test-date2" class="test-date2">
+			<button class="add-btn">add</button>
+		</div>
+	</div>
+</body>
+<script>
+(function($) {
+	jQuery('.files').click(function() {
+		var file_cnt = 0;
+		var file;
+		jQuery(this).each(function() {
+			file = $('.files')[file_cnt].files[file_cnt]
+			if(file){
+			  console.log(file.name);
+			}
+			file_cnt++;
+		});
+
+		jQuery('.file-test').append('<input type="file" name="files[]" class="files" />');
+	});
+
+	jQuery(document).on('click', '.add-btn', function() {
+		if(jQuery('.test-date2').val() == '') {
+			jQuery('.test-date2').val(jQuery('.test-date').val());
+		} else {
+			jQuery('.test-date2').val(jQuery('.test-date2').val() + ', ' + jQuery('.test-date').val());
+		}
+	});
+	
+})(jQuery);
+</script>
+</html>

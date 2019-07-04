@@ -1,0 +1,262 @@
+.view-top-exxplanation h3 {
+	font-weight: bold;
+}
+
+.edit-forms input,
+.edit-forms textarea {
+    color: #ffffff;
+}
+
+.list colgroup col:nth-child(1) { /* 번호 */
+	width: 10%;
+}
+
+.list colgroup col:nth-child(2) { /* 제목 */
+	width: 40%;
+}
+
+.list colgroup col:nth-child(3) { /* 작성자 */
+	width: 20%;
+}
+
+.list colgroup col:nth-child(4) { /* 조회수 */
+	width: 10%;
+}
+
+.list colgroup col:nth-child(5) { /* 작성일 */
+	width: 20%;
+}
+
+.list thead {
+	background-color: #333;
+	color: #FFF;
+}
+
+.list_search_btns {
+	padding: 0 30px;
+}
+
+#view-all-projects, #call-to-action {
+    padding: 20px 0 20px 0;
+}
+
+@media (min-width: 1199px) {
+    #view-all-projects, #call-to-action {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.pagination li a {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.pagination li.active a,
+.pagination li.active a:hover,
+.pagination li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*
+Gallery
+=========================== */
+.gallery-wrapper{
+    /*background:#333;*/
+    position:relative;
+    float:left;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.gallery-container{
+    position:relative;
+    float:left;
+    /*width: 66.66666667%;*/
+    width: 100%;
+    background:#fff;
+    z-index:4;
+    /*min-height:1040px;*/
+}
+
+.gallery-wrapper .aside-container.on-left{
+    padding-left:60px;
+}
+
+.gallery-wrapper .aside-container.on-right{
+    padding-right:60px;
+}
+
+ul.popular-item{
+    float:left;
+    width:100%;
+    margin:10px -2px 0 -2px;
+    padding:0;
+}
+
+ul.popular-item li{
+    float:left;
+    width:25%;
+    height:60px;
+    margin:0 0 2px 0;
+    padding:0 1px 0 1px;
+    overflow:hidden;
+}
+
+ul.popular-item li img{
+    width:100%;
+    height:auto;
+}
+
+ul.popular-item li a:hover{
+    opacity:0.5;
+}
+
+.app-screenshot{
+    margin-bottom:30px;
+    border:1px solid #e0e0e0;
+    display:inline-block;
+}
+
+/*
+Freewall
+=========================== */
+.free-wall {
+    margin: auto;
+}
+
+.free-wall-logo {
+    margin: auto;
+    height: 420px;
+}
+
+.size1 {
+    width: 260px;
+}
+
+.size2 {
+    width: 320px;
+}
+
+.size3 {
+    width: 600px;
+}
+
+.brick {
+    float: left;
+    cursor: default;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.filter-items{
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+
+.filter-items li{
+    list-style:none;
+    margin:0 0 20px 0;
+    padding:0;
+    font-size::14px;
+    line-height:14px;
+    font-weight:700;
+    display:block;
+}
+
+.filter-items li span{
+    cursor:pointer;
+}
+
+.filter-items li.active span,
+.filter-items li span:hover,
+.filter-items li span:active,
+.filter-items li span:focus{
+    border-bottom:2px solid;
+}
+
+.aside-container.on-left .filter-items li span{
+    padding:0 0 5px 10px;
+}
+
+.aside-container.on-right .filter-items li span{
+    padding:0 10px 5px 0;
+}
+
+.aside-container.on-left .filter-items{
+    margin:30px 40px 0 0;
+}
+
+.aside-container.on-right .filter-items{
+    margin:30px 0 0 40px;
+}
+
+.cate-nav {
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.cate-nav li {
+    display: inline-block;
+}
+
+.cate-nav li span {
+    display: inline-block;
+    padding: 7px 15px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.cate-nav li span:hover {
+    background-color: #000000;
+}
+
+.cate-nav li.active span {
+    background-color: #000000;
+}
+
+.no-data {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 1.8em;
+    line-height: 250px;
+    text-align: center;
+}
+
+input.list-search-input {
+    background-color: #151618;
+    color: #fff;
+    border-color: #000000;
+    border-radius: 0;
+}
+
+.pagination li.disabled {
+    background-color: red !important;
+}
+
+/* Write */
+.alert-yellow {
+    color: #8a6d3b;
+    background-color: #FAB702;
+    border-color: #faebcc;
+}
+#content {
+    padding: 10px 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+#content {
+    background-color: #18191b;
+    color: #fff;
+}

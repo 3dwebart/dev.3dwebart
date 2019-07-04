@@ -1,0 +1,350 @@
+.left-padding-clear {
+   padding-left: 0 !important;
+}
+
+.right-padding-clear {
+   padding-right: 0 !important;
+}
+
+.dark-grey-line {
+	border-color: #CCCCCC;
+}
+
+.modal .modal-header {
+	position: relative;
+	background-color: #EEBF4E;
+	line-height: 5px;
+	font-size: 5px;
+	height: 5px;
+	padding: 0;
+	border: 0;
+}
+
+.modal .modal-header img {
+	position: absolute;
+	z-index: 1;
+	top: -11px;
+	left: 46px;
+}
+
+.modal-body {
+	background-color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+.modal-head .modal-top-ribbon {
+	position: relative;
+}
+
+.modal-head .modal-top-ribbon img {
+	position: absolute;
+	z-index: 1;
+}
+
+.nav-tabs li a {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+.tab-content {
+	padding: 0;
+	background: transparent !important;
+/* 	background-color: #F4F4F4; */
+}
+
+.modal {
+	padding: 0;
+	background: transparent !important;
+/* 	background-color: #F4F4F4; */
+}
+
+.tab-content div .detail-content,
+.tab-content div .detail-recommend,
+.tab-content div .detail-recommend-connection {
+	padding-bottom: 5px;
+	background-image: url('/assets/frontend/layout/img/tab-content-guide-line.png');
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.tab-content div .detail-content, .tab-content div .detail-info {
+	background-color: white;
+}
+
+.tab-content div .detail-recommend {
+	border-top: 1px solid #E0E0E0;
+	margin-top: 6px;
+	background-color: #FFFFFF;
+}
+
+.tab-content div .detail-recommend .recommend-title {
+	margin-top: 20px;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+}
+
+.tab-content div .detail-recommend .recommend-carousel {
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+	background-color: #F4F4F4;
+	padding: 20px 15px;
+}
+
+.tab-content div .detail-recommend-connection {
+	border-top: 1px solid #E0E0E0;
+	margin-top: 6px;
+	background-color: #FFFFFF;
+}
+
+.tab-content div .detail-recommend-connection div .recommend-connection-title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+}
+
+.tab-content div .detail-recommend-connection ul li {
+	display: block;
+	border-bottom: 1px solid #E0E0E0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.tab-content div .detail-recommend-connection ul li div span {
+	display: block;
+}
+
+.tab-content div .detail-recommend-connection ul li div span.sns {
+	font-size: 0.8em;
+	color: 999;
+}
+
+.tab-content div .detail-recommend-connection ul li div span.reg-date {
+	font-size: 0.8em;
+	color: 999;
+}
+
+.tab-content div .detail-recommend-connection .more {
+	display: block;
+	font-size: 0.8em;
+}
+
+.main-laatest .sort {
+	margin: 20px 0;
+}
+
+.main-laatest .sort a {
+	padding: 10px 15px;
+}
+
+.main-laatest .title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.latest-box h4 {
+	line-height: 1.5em;
+}
+
+/* 메인 슬라이드 Start */
+.cangoto-slider {
+	position: relative;
+	margin-bottom: 50px;
+}
+.cangoto-slider .view-first {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child .title-box {
+	position: absolute;
+	/*
+	width: 668px;
+	*/
+	width: 100%;
+	margin-left: 10px;
+	padding: 10px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dedede;
+	border-radius: 10px !important;
+	bottom: -100px;
+	z-index: 910;
+	background-color: #FFF;
+
+	display: none;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child .title-box h2 {
+	display: inline-block;
+	float: left;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child .title-box .d-day {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	float: right;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child .title-box span {
+	color: #999;
+}
+
+.cangoto-slider .film_roll_pager {
+	display: block;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	margin: auto;
+	bottom: -30px;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child .view-first {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border-radius: 10px !important;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child img {
+	border-radius: 10px !important;
+	display: inline-block !important;
+	
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_shuttle .film_roll_child .view-first .mask {
+	/*border-radius: 50px !important;*/
+	border-radius: 10px !important;
+	
+}
+
+.cangoto-slider .film_roll_pager a {
+	border-color: #bbbbbb;
+	background-color: #bbbbbb;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px !important;
+}
+
+.cangoto-slider .film_roll_pager a.active {
+	border-color: #eec02f;
+	background-color: #eec02f;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_prev {
+	background-image: url('/assets/frontend/layout/img/main-slide-arrow-left.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 40px !important;
+	z-index: 1001;
+}
+
+.cangoto-slider .film_roll_wrapper .film_roll_next {
+	background-image: url('/assets/frontend/layout/img/main-slide-arrow-right.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 40px !important;
+	z-index: 1001;
+}
+/* 메인 슬라이드 End */
+
+/* 최근 게시 4종 Start */
+@media (min-width: 1024px) {
+	.modal-dialog {
+		width: 915px;
+	}
+}
+
+.price_info {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px !important;
+	color: #FFF;
+}
+
+.original-price {
+	text-decoration: line-through;
+}
+
+.main-detail-left-border {
+	background-image: url(/assets/frontend/layout/img/main-detail-left-border.png);
+	background-position: left center;
+	background-repeat: repeat-y;
+}
+
+.detail-content div {
+	line-height: 2.5em;
+}
+
+.detail-info, .detail-comment {
+	margin-top: 20px;
+}
+
+.detail-comment {
+	background-color: #FFFFFF;
+}
+
+.detail-comment div .name-email-tel {
+	color: #999999;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0;
+	margin: 0 !important;
+}
+.detail-comment div .explanation, .detail-comment div .comment {
+	color: #CECECE;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0;
+	margin: 0 !important;
+}
+
+.detail-comment .detail-comment-top div, .detail-comment .detail-comment-bottom div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.comment-mudify-btn i {
+	font-size: 16px;
+}
+
+.application-modal-title {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+}
+
+.main-latest > div {
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
+
+.all-search div.form-group div.input-group input {
+	border-radius: 5px !important;
+}
+
+
+.all-search div.form-group div.input-group span.input-group-btn button {
+	border-radius: 5px !important;
+}
+
+.title-n-sort {
+	border-top-width: 2px;
+	border-top-style: solid;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+
+.title-n-sort div {
+	margin-bottom: 15px;
+	line-height: 24px;
+}
+
+.title-n-sort div.title {
+	font-size: 22px;
+}

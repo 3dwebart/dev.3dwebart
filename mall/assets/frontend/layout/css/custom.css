@@ -1,0 +1,136 @@
+/* here you can put your own css to customize and override the theme */
+div.search-form-div {
+	width: 300px !important;
+}
+
+.r-padding-clear {
+	padding-right: 0 !important;
+}
+
+.l-padding-clear {
+	padding-left: 0 !important;
+}
+
+.box {
+    border:1px solid #dedede;
+}
+
+.member-info {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.member-info li {
+	display: block;
+}
+
+.member-info li a {
+	display: block;
+	padding: 5px 10px;
+	background-color: #dedede;
+	text-decoration: none;
+}
+
+.member-info li a:hover {
+	background-color: #414141;
+	color: #FFF;
+}
+
+.top-margin10 {
+	margin-top: 10px;
+}
+
+.top-margin20 {
+	margin-top: 20px;
+}
+
+.bottom-margin5 {
+	margin-bottom: 5px;
+}
+
+.bottom-margin10 {
+	margin-bottom: 10px;
+}
+
+.top-bottom-padding10 {
+	padding: 10px 0;
+}
+
+.top-padding10 {
+	padding-top: 10px;
+}
+
+.bottom-padding10 {
+	padding-bottom: 10px;
+}
+
+.main-navi {
+	/*background-color: #ECF0F7;*/
+	border-top: 1px solid #DDE4E9;
+	border-bottom: 1px solid #DDE4E9;
+}
+
+.main-navi div ul {
+	display: inline-block;
+}
+
+.main-navi div ul li {
+	display: inline-block;
+}
+
+.ft_copy {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	background-color: #414141;
+	color: #FFF;
+	padding: 5px 0;
+}
+
+.ft_copy div a {
+	display: inline-block;
+	padding: 5px 10px;
+	color: #FFF;
+}
+
+.ft_copy div a.ft_totop {
+	float: right;
+}
+
+section div h2.inline-block {
+	display: inline-block;
+}
+section div.popular ul {
+	display: inline-block;
+	list-style: none;
+}
+
+section div.popular ul li {
+	display: inline-block;
+}
+
+section div.visit ul {
+	display: inline-block;
+	list-style: none;
+}
+
+section div.visit ul li {
+	display: inline-block;
+}
+
+.latest ul {
+	list-style: none;
+}
+
+.latest h3 a.subject {
+	font-weight: bold;
+	color: #666;
+}
+
+.latest h3 a.get-more-btn {
+	display: inline-block;
+	font-size: 0.6em;
+	color: #999;
+	float: right;
+}

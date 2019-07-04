@@ -1,0 +1,283 @@
+	.board {
+		width: 800px;
+		height: 524px;
+		margin: 0;
+		padding: 0;
+		margin: auto;
+		background: url('img/blackboard.png');
+		position: relative;
+	}
+	
+	.main-content {
+		padding: 80px 0;
+		min-height: 500px;
+	}
+	
+	.content {
+		width: auto;
+		position: absolute;
+		top: 100px;
+		left: 250px;
+		color: #FFFFFF;
+	}
+	
+	.logo-area, .country-select {
+		margin: 10px 0;
+	}
+	
+	.country-select ul {
+		padding-left: 0;
+	}
+	
+	.country-select ul {
+		float: right;
+		list-style: none;
+		display: inline-block;
+	}
+	
+	.country-select ul {
+		padding-left: 0;
+	}
+	
+	.country-select ul li {
+		display: inline;
+		float: left;
+	}
+	
+	.round-box {
+		padding: 5px;
+	}
+	
+	.round-box:after {
+		content: '';
+		display: block;
+		float: none;
+		clear: both;
+	}
+	
+	.round-box > .in-box {
+		width: auto;
+		border: 1px solid #dedede;
+		border-radius: 20px;
+	}
+	
+	.round-box > .in-box-2 {
+		width: auto;
+		border: 5px solid #dedede;
+		border-radius: 20px;
+	}
+	
+	.round-box > .in-box > a {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		border-radius: 20px;
+		font-size: 1.5em;
+	}
+	
+	.join-now, .notice {
+		height: 195px;
+	}
+	
+	.join-now > a, .about-us > a {
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	.about-us > a {
+		background: #99a6d3 url('/img/question-mark.png') no-repeat center center;
+	}
+	
+	.about-us > a:hover {
+		background: #5b6daa url('/img/question-mark.png') no-repeat center center;
+	}
+	
+	.join-now > a {
+		background: #8af1de url('/img/exclmation-mark.png') no-repeat center center;
+	}
+	
+	.join-now > a:hover {
+		background: #45bea8 url('/img/exclmation-mark.png') no-repeat center center;
+	}
+	
+	.about-us {
+		height: 400px;
+		font-size: 4em;
+		font-weight: bold;
+	}
+	
+	@media screen and (max-width: 720px) {
+		.about-us {
+			height: 20vw;
+			font-size: 10vw;
+			font-weight: bold;
+		}
+		
+		.about-us > a {
+			background-color: #99a6d3;
+			background-image: url('/img/question-mark.png');
+			background-position: center center;
+			background-size: 150px;
+		}
+		
+		.about-us > a:hover {
+			background-color: #5b6daa;
+			background-image: url('/img/question-mark.png');
+			background-position: center center;
+			background-size: 150px;
+		}
+	}
+	
+	.join-now {
+		font-size: 3em;
+		font-weight: bold;
+	}
+	
+	.notice > .title {
+		margin: 10px 0 0 30px;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	
+	.notice > .contents {
+		margin: 50px 0 0 50px;
+	}
+	
+	.half-alpha {
+		opacity: 0.5;
+		filter: alpha(opacity=50); /* For IE8 and earlier */
+	}
+	
+	.non-alpha {
+		opacity: 1;
+		filter: alpha(opacity=100); /* For IE8 and earlier */
+	}
+
+
+
+.text-center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.w-text {
+	color: #FFFFFF;
+}
+
+.top-margin20 {
+	margin-top: 20px;
+}
+
+.top-margin50 {
+	margin-top: 50px;
+}
+
+.all-padding10 {
+	padding: 10px;
+}
+
+.non-border {
+	border: 0;
+}
+button.aBtn {
+	background-color: transparent;
+	border: 0;
+}
+.clear-fix:after, .clear-fix:before {
+	display: block;
+	content: '';
+	float: none;
+	clear: both;
+}
+.lang-btn {
+	background-color: transparent;
+	border: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .flags {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.about-us-title > h1 {
+	margin-top: 0;
+}
+
+.language-swlwctor ul {
+	display: inline-block;
+	list-style: none;
+	margin-top: 10px;
+	float: right;
+}
+
+.language-swlwctor ul li {
+	display: inline;
+}
+
+.footer {
+	width: 100%;
+	/*
+	background-color: #333333;
+	*/
+	padding: 10px 0;
+}
+
+.footer:before, .footer:after {
+	display: block;
+	content: '';
+	float: none;
+	clear: both;
+}
+
+.index-main-image {
+	text-align: center;
+}
+
+.footer > .footer-logo {
+	width: 180px;
+	margin-left: 20px;
+	float: left;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.language-select {
+	width: 50px;
+	float: right;
+}
+
+.language {
+	width: 50px;
+	height: 50px;
+}
+
+.terms {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.terms h2,
+.terms h3,
+.terms h4, 
+.terms h5,
+.terms .title {
+	color: blue;
+	font-weight: bold;
+}
+
+.terms .title {
+	padding-right: 5px;
+}
+
+.terms ul li {
+	padding-bottom: 20px;
+}
+
+.terms ul li ol {
+	padding-top: 20px;
+}

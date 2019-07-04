@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+div#container {
+	width: 100%;
+	height: 100%;
+}
+
+div#container > header {
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #555;
+	/** 웹킷에 대한 그라데이션 - 강의시간에는 구글 크롬만 대상으로 합니다. */
+	background-image: -webkit-linear-gradient(top, rgb(89,189,212) 8%, rgb(40,142,168) 74%);
+	box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+}
+
+div#container > header > h1 {
+	color: #fff;
+	font: 20px "Helvetica";
+	text-shadow: 0 1px 1px #000;
+	text-align: center;
+	position: relative;
+	top: 12px;
+}
+
+div#container > section {
+	width: auto;
+	padding-top: 46px;
+}

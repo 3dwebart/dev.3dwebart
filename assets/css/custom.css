@@ -1,0 +1,39 @@
+body {
+  font-family: "Open+Sans", Georgia, Serif; }
+
+div, ul, ol, li, span, a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.side-menus {
+  font-family: "Open+Sans", Georgia, Serif;
+  font-size: 16px;
+  font-weight: 300;
+  height: 100%;
+  background-color: #000;
+  color: #FFF;
+  position: fixed; }
+
+.side-menus .logo {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+.side-menus .menus {
+  list-style: none; }
+  .side-menus .menus li a {
+    color: #FFF;
+    text-decoration: none; }
+
+@media screen and (min-width: 992px) {
+  .side-menus .logo {
+    padding-left: 30px; }
+  .side-menus .menus {
+    padding-left: 30px; } }
+.detail-contents {
+  padding-bottom: 150px; }
+
+/*# sourceMappingURL=custom.css.map */

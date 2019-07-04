@@ -1,0 +1,74 @@
+.menu-search .search-box.show-hide-search-box {
+	display: block !important;
+}
+
+.header-navigation a {
+	position: relative;
+}
+.page-header-fixed .header {
+    z-index: 10;
+}
+span.comment {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: -20px;
+	z-index: 10000;
+	text-align: center;
+}
+
+span.comment .title {
+	background-color: #000;
+	color: #FFF;
+	padding: 9px;
+}
+
+span.comment i.arrow {
+	color: #000;
+}
+
+.language-select {
+	position: relative;
+}
+
+.language-select a {
+	padding: 5px 0;
+}
+
+.language-select > ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	display: inline-block;
+	list-style: none;
+	z-index: 90099;
+	top: 20px;
+	left: 0;
+	border: 2px solid #dedede;
+}
+
+.language-select ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px dotted #dedede;
+}
+.language-select ul li:first-child {
+	border-top: 0;
+}
+
+.language-select ul li button, .language-select ul li a {
+	display: block;
+	width: 70px;
+	padding: 5px 15px;
+	background-color: #333333;
+	border-bottom: 1px solid #dedede;
+	border: 0;
+	text-align: left;
+}
+
+.language-select ul li button:hover, .language-select ul li a:hover {
+	background-color: #333;
+	color: #fff;
+}

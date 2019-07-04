@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+	.navbar-nav .dropdown ul {
+		display: none
+	}
+	.navbar-default .main-navi .navbar-nav > .dropdown > a {
+		color: #333333;
+	}
+
+	.navbar-default .main-navi .navbar-nav > .dropdown > a.active {
+		background: #333333;
+		color: #FFFFFF;
+	}
+
+	.navbar-default .main-navi .navbar-nav > .dropdown > a:hover,
+	.navbar-default .main-navi .navbar-nav > .dropdown > a:focus {
+		color: #FFFFFF;
+		background: none
+	}
+	.navbar-default .main-navi .navbar-nav > li:hover {
+		background: #333333;
+		color: #FFFFFF;
+	}
+	.navbar-inverse .navbar-nav > .dropdown > a,
+	.navbar-inverse .navbar-nav > .dropdown > a:hover,
+	.navbar-inverse .navbar-nav > .dropdown > a:focus {
+		color: #FFFFFF;
+		background: none
+	}
+	.navbar-inverse .navbar-nav > li:hover {
+		background: #080808
+	}
+	.navbar-nav .hovernav:hover > .dropdown-menu {
+		display: block;
+	}
+}

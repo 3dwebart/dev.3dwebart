@@ -1,0 +1,25 @@
+.terms {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.terms h2,
+.terms h3,
+.terms h4, 
+.terms h5,
+.terms .title {
+	color: blue;
+	font-weight: bold;
+}
+
+.terms .title {
+	padding-right: 5px;
+}
+
+.terms ul li {
+	padding-bottom: 20px;
+}
+
+.terms ul li ol {
+	padding-top: 20px;
+}
