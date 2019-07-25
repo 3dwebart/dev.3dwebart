@@ -1,12 +1,12 @@
-			<script>
-				$(function() {
-					$('.aBtn').click(function() {
-						$('.myform').attr('method', 'post');
-						$('.myform').attr('action', '<?php echo($site_home); ?>');
-						$('.myform').submit();
-					});
+		<script>
+			$(function() {
+				$('.aBtn').click(function() {
+					$('.myform').attr('method', 'post');
+					$('.myform').attr('action', '<?php echo($site_home); ?>');
+					$('.myform').submit();
 				});
-			</script>
+			});
+		</script>
 	</div>
 	<!-- 하단 내용 Start -->
 	<div class="pre-footer">

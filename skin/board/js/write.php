@@ -101,6 +101,8 @@
                         <button class="code-add btn btn-info" data-code="html">html</button>
                         <button class="code-add btn btn-info" data-code="css">CSS</button>
                         <button class="code-add btn btn-info" data-code="js">js</button>
+                        <button class="code-add btn btn-info" data-code="php">php</button>
+                        <button class="code-add btn btn-info" data-code="sql">MySQL</button>
                     </div>
                 </div>
             </div>
@@ -204,6 +206,8 @@
                         '<button class="code-add btn btn-info" data-code="html">html</button>' +
                         '<button class="code-add btn btn-info" data-code="css">CSS</button>' +
                         '<button class="code-add btn btn-info" data-code="js">js</button>' + 
+                        '<button class="code-add btn btn-info" data-code="php">php</button>' + 
+                        '<button class="code-add btn btn-info" data-code="sql">MySQL</button>' + 
                     '</div>' + 
                 '</div>' + 
             '</div>';

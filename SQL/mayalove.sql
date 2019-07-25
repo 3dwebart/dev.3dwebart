@@ -5,8 +5,19 @@ DROP DATABASE IF EXISTS `mayalove`;
 CREATE DATABASE `mayalove`;
 USE `mayalove`;
 
-DROP TABLE IF EXISTS `language`;
+-- Google login
+DROP TABLE IF EXISTS `google_users`;
+CREATE TABLE IF NOT EXISTS `google_users` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `google_id` varchar(60) NOT NULL,
+  `google_name` varchar(60) NOT NULL,
+  `google_email` varchar(60) NOT NULL,
+  `google_link` varchar(150) NOT NULL,
+  `google_picture_link` varchar(200) NOT NULL,
+  PRIMARY KEY (`uid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
+DROP TABLE IF EXISTS `language`;
 CREATE TABLE IF NOT EXISTS `language` (
   `id`          INT           NOT NULL AUTO_INCREMENT                COMMENT '일련번호',
   `language`    char(2)       NOT NULL                               COMMENT '언어',

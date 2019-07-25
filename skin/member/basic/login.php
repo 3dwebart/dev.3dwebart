@@ -12,9 +12,24 @@
 					<h1>로그인</h1>
 				</div>
 				</script>
+				<?php
+				session_start();
+				$fb = new Facebook\Facebook([
+				  'app_id' => '{app-id}', // Replace {app-id} with your app id
+				  'app_secret' => '{app-secret}',
+				  'default_graph_version' => 'v3.2',
+				  ]);
+
+				$helper = $fb->getRedirectLoginHelper();
+
+				$permissions = ['email']; // Optional permissions
+				$loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
+
+				echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+				?>
 				<!-- 로그인 폼 시작 -->
 					<fieldset>
-						<input type="hidden" name="back_url" value="<?php echo($back_url); ?>"
+						<input type="hidden" name="back_url" value="<?php echo($back_url); ?>">
 						<input type="hidden" name="now_url" value="<?php echo($now_url); ?>" />
 						<div class="form-group">
 							<input type="text" name="user_id" id="user_id" class="form-control" placeholder="user id">
