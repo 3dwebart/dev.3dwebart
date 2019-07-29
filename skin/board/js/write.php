@@ -14,6 +14,7 @@
 		<i class="fa fa-pencil-square-o"></i>
 		글쓰기
 	</div>
+    <!-- <h1>TEST : chr(30) = <?php echo chr(30); ?></h1> -->
 <?php if (!$session_user_id) { ?>
 	<!-- 작성자 -->
 	<div class="form-group">
@@ -98,11 +99,11 @@
                     <button class="btn btn-success  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Code </button>
                     <button class="btn btn-warning file-add">Image</button>
                     <div class="dropdown-menu">
-                        <button class="code-add btn btn-info" data-code="html">html</button>
-                        <button class="code-add btn btn-info" data-code="css">CSS</button>
-                        <button class="code-add btn btn-info" data-code="js">js</button>
-                        <button class="code-add btn btn-info" data-code="php">php</button>
-                        <button class="code-add btn btn-info" data-code="sql">MySQL</button>
+                        <button class="code-add btn btn-info btn-block" data-code="html">html</button>
+                        <button class="code-add btn btn-info btn-block" data-code="css">CSS</button>
+                        <button class="code-add btn btn-info btn-block" data-code="javascript">javascript</button>
+                        <button class="code-add btn btn-info btn-block" data-code="php">php</button>
+                        <button class="code-add btn btn-info btn-block" data-code="sql">MySQL</button>
                     </div>
                 </div>
             </div>
@@ -203,11 +204,11 @@
                     '<button class="btn btn-warning file-add">Image</button>' +
                     '<button class="btn btn-danger delete-btn hidden-btn"><i class="fa fa-close" visible="true"></i></button>' + 
                     '<div class="dropdown-menu">' +
-                        '<button class="code-add btn btn-info" data-code="html">html</button>' +
-                        '<button class="code-add btn btn-info" data-code="css">CSS</button>' +
-                        '<button class="code-add btn btn-info" data-code="js">js</button>' + 
-                        '<button class="code-add btn btn-info" data-code="php">php</button>' + 
-                        '<button class="code-add btn btn-info" data-code="sql">MySQL</button>' + 
+                        '<button class="code-add btn btn-info btn-block" data-code="html">html</button>' +
+                        '<button class="code-add btn btn-info btn-block" data-code="css">CSS</button>' +
+                        '<button class="code-add btn btn-info btn-block" data-code="js">js</button>' + 
+                        '<button class="code-add btn btn-info btn-block" data-code="php">php</button>' + 
+                        '<button class="code-add btn btn-info btn-block" data-code="sql">MySQL</button>' + 
                     '</div>' + 
                 '</div>' + 
             '</div>';
@@ -226,7 +227,8 @@
                 '<input type="file" name="myfile[]" id="myfile" />' + 
             '</div>' + 
             addButton + 
-            '<input type="hidden" name="code_type[]" class="code_type" value="" />' +
+            '<input type="hidden" name="content[]" value="" />' +
+            '<input type="hidden" name="code_type[]" class="code_type" value="file" />' +
             '<input type="hidden" name="filePresence[]" class="filePresence" value="1" />' +
             '<input type="hidden" name="content[]" class="content" value="" />' +
             '<div class="clearfix"></div>';

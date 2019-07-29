@@ -13,7 +13,8 @@
 				</div>
 				</script>
 				<?php
-				session_start();
+				// session_start();
+				/*
 				$fb = new Facebook\Facebook([
 				  'app_id' => '{app-id}', // Replace {app-id} with your app id
 				  'app_secret' => '{app-secret}',
@@ -26,6 +27,7 @@
 				$loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
 
 				echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+				*/
 				?>
 				<!-- 로그인 폼 시작 -->
 					<fieldset>

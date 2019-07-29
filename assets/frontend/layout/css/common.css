@@ -1,13 +1,39 @@
 .menu-search .search-box.show-hide-search-box {
 	display: block !important;
 }
-
+/*
+font-family: 'Tajawal', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Cinzel Decorative', cursive;
+*/
 .header-navigation a {
 	position: relative;
 }
 .page-header-fixed .header {
     z-index: 10;
 }
+.header-navigation > ul > li > a {
+	transition: all .5s ease;
+}
+@media(min-width: 992px) {
+	.header-navibar .container {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.header-navibar .container .site-logo {
+		text-decoration: none;
+		color: rgba(255,255,255,1);
+		font-family: 'Tajawal', sans-serif;
+		margin: 0;
+	}
+	.header-navibar .container:before,
+	.header-navibar .container:after {
+		content: none;
+	}
+}
+
 span.comment {
 	display: none;
 	position: absolute;

@@ -40,13 +40,26 @@
 		}
 	}
 
+	$switch_content = 0;
+
 	if(is_array($content)) {
+		$switch_content = 1;
+		$tmp_content = '';
+		$content_arr = $content;
 		$code_type    = post('code_type');
 		$filePresence = post('filePresence');
 		include_once('codePubJson.php');
 		$content = $viewJsonCode;
+		for ($i = 0; $i < count($code_type); $i++) { 
+			if($i != 0) {
+				$tmp_content .= chr(30);
+			}
+			$tmp_content .= $code_type[$i].chr(31).$filePresence[$i].chr(31).$content[$i];
+		}
+
+		$content = $tmp_content;
 	}
-	
+
 	// 내용 보기 중 상세 내용 표시 상세보기 클릭시 팝업창에 노출
 	$explanation1 = '';
 	$explanation2 = '';
@@ -57,7 +70,7 @@
 		}
 		$explanation = $explanation1.'||'.$explanation2;
 	}
-	
+
 	if ($movie_size && !$movie_id) { redirect(FALSE, '동영상을 사용하려면 동영상의 아이디가 필요합니다.\n아이디가 없습니다. '); }
 	
 	if (!$movie_size && $movie_id) { redirect(FALSE, '동영상을 사용하려면 동영상의 비율을 정해야 합니다.\n비율을 정해주세요. '); }
@@ -111,7 +124,7 @@
 	}
 
 	if (!$result) {
-		//redirect(FALSE, '글 작성에 실패했습니다. 관리자에게 문의 바랍니다.');
+		redirect(FALSE, '글 작성에 실패했습니다. 관리자에게 문의 바랍니다.');
 	}
 
 	// 게시물 일련번호.

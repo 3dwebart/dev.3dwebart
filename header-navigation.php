@@ -2,7 +2,7 @@
 	<div class="header header-navibar"></div>
 	<script id="headerNavigation" type="text/x-jquery-tmpl">
 		<div class="container">
-			<a class="site-logo" href="<?php echo($site_home);?>/index.php"><img src="<?php echo($site_home);?>/assets/frontend/layout/img/logos/maya-logo.png" alt="3d Web Artist"></a>
+			<a class="site-logo" href="<?php echo($site_home);?>/index.php">3D WEB ART</a>
 
 			<a href="#" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 

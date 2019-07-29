@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+img {
+	max-width: 100%;
+}
+</style>
+<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<a href="#" class="dom-load">AASDA</a>
+
+<script>
+function domLoad() {
+	getElementById('dom-test').addEventListener('DOMContentLoaded', function()
+	{
+		console.log('Final complete !!');
+	});
+}
+(function($) {
+	var d = '';
+	var img = [{
+				url: './img/',
+				file: 'girl_playing_in_the_water-wallpaper-2560x1600.jpg'
+			}, {
+				url: './img/',
+				file: 'girl_in_white_and_red-wallpaper-1680x1050.jpg'
+			}, {
+				url: './img/',
+				file: 'girl_in_swimsuit-wallpaper-5120x3200.jpg'
+			}, {
+				url: './img/',
+				file: 'girl_in_grass_field-wallpaper-2560x1600.jpg'
+			}, {
+				url: './img/',
+				file: 'girl_bathing_outdoor-wallpaper-1440x900.jpg'
+			}, {
+				url: './img/',
+				file: 'cute_blond_girl_smilling-wallpaper-2560x1600.jpg'
+			}, {
+				url: './img/',
+				file: 'blonde_girl_on_the_beach-wallpaper-2560x1600.jpg'
+			}, {
+				url: './img/',
+				file: 'beautiful_girls_2-wallpaper-1920x1200.jpg'
+			}, {
+				url: './img/',
+				file: 'beautiful_asian_girl_rainforest_waterfall-wallpaper-3840x2400.jpg'
+			}, {
+				url: './img/',
+				file: 'beautiful_asian_girl_rainforest_waterfall-wallpaper-3554x1999.jpg'
+			}, {
+				url: './img/',
+				file: 'assassins_creed_girl-wallpaper-1680x1050.jpg'
+			}];
+	d += '<div id="dom-test">';
+	for (var i = 0; i < img.length; i++) {
+		d += '<img src="' + img[i].url + img[i].file + '" />';
+	}
+	d += '</div>';
+	jQuery(document).on('click', '.dom-load', function() {
+		jQuery('body').append(d);
+		domLoad();
+	});
+})(jQuery);
+</script>
+</body>
+</html>

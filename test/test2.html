@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<a href="#" class="dom-load">AASDA</a>
+<div class="str-len"></div>
+<script>
+(function($) {
+	var d = 'a    b';
+	var str = ('str length : ' + d.length);
+	jQuery('.str-len').html(str);
+})(jQuery);
+</script>
+</body>
+</html>

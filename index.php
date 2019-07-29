@@ -1,5 +1,4 @@
 <?php include_once('header_ui.php'); ?>
-
 		<!-- BEGIN SLIDER -->
 		<h1 class="test"></h1>
 		<div class="page-slider">
@@ -348,15 +347,11 @@
 					<p>
 						다년간의 노하우로 포토샵 및 일러스트작업을 합니다.<br />
 						포토샵 강의 경력 있습니다.<br />
-						디자인은 안합니다.(제가 하면 망합니다.)
+						디자인은 안합니다.
 					</p>
 				</div>
 			</div>
 		</div>
-
-
-
-
 <!--
 <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Click to open Modal</a>
 -->

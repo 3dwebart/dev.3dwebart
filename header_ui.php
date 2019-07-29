@@ -38,6 +38,8 @@
 	<link rel="shortcut icon" href="<?php echo($site_home); ?>/favicon.ico">
 
 	<!-- Fonts START -->
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Julius+Sans+One|Tajawal:200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
 	<!-- Fonts END -->
 

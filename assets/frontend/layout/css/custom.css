@@ -27,7 +27,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.header {margin-bottom: 0;}
+.header {margin-bottom: 0; }
+.header {
+	transition: all .5s ease;
+}
+.page-header-fixed .header {
+	background-color: rgba(30,30,30,.8);
+}
 .header.header-navibar.reduce-header .site-logo {
   padding-top: 5px;
   padding-bottom: 5px;
